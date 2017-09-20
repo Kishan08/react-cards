@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:700|Lato');
+body{
+  box-sizing: border-box;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Josefin Slab', serif;
+  font-weight: 700;
+}
+ul{
+  list-style-type: none; 
+}
+#root{
+  width: 800px;
+  margin: 0 auto;
+}
+.card{
+  border: 1px solid #eee;
+  margin: 2em;
+  background-color: #fff;
+  /*box-shadow: 0 19px 38px rgba(0,0,0,.1), 0 15px 12px rgba(0,0,0,.12);*/
+  box-shadow: 0 6px 30px -6px rgba(0,0,0,.35);
+  border-radius: 0;
+  display: flex;
+}
+.card-content{
+  padding: 16px;
+  position: relative;
+}
+.card-title{
+  font-size: 38px;
+  text-transform: uppercase;
+  margin: 0.4em 0;
+}
+.card-description{
+  text-align: justify;
+}
+.like-btn{
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+}
+.like-btn > img{
+  width: 18px;
+  cursor: pointer;
+}
+.like-btn > strong{
+  margin-left: 0.3em;
+}
+.post-info{
+  position: absolute;
+  left: 16px;
+  bottom: 10px;
+  display: flex;
+}
+.post-info > img{
+  border: 1px solid #eee;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #ddd;
+}
+.post-info > .post-author{
+  font-weight: 700;
+  margin-top: 16px;
+  margin-left: 6px;
+}
+.post-info > .post-author > span{
+  text-transform: capitalize;
+}
+.post-info > .post-author > .post-time{
+  color: #444;
+  font-size: 12px;
+}
